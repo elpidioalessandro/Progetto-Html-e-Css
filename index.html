@@ -1,14 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My personal website</title>
+    <title>Elpidio Alessandro | Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-    Hi, I'm Elpidio Alessandro
-    <br />
-    <a href="/cv/index.html">CV</a><br />
-    <a href="/contacts/index.html">Contacts</a><br />
+    <header class="site-header">
+        <div class="container nav">
+            <a class="logo" href="./index.html">Elpidio Alessandro</a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./chisono/index.html">Chi Sono</a></li>
+                    <li><a href="./progetti/index.html">Progetti</a></li>
+                    <li><a href="./cv/index.html">Curriculum</a></li>
+                    <li><a href="./contacts/index.html">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero hero-main">
+            <div class="container hero-content">
+                <h1>Sto costruendo il mio percorso nel web development.</h1>
+                <p class="hero-text">
+                    Mi chiamo Alessandro Elpidio e sto approfondendo le basi dello sviluppo front-end, con particolare
+                    attenzione a HTML e CSS e alla costruzione di pagine web semplici,
+                    ordinate e responsive.                                                                                            
+
+                    Questo sito nasce come progetto personale e come spazio
+                    in cui raccogliere i lavori e le competenze che sto sviluppando
+                    durante il mio percorso di formazione.
+                </p>
+
+                <div class="hero-buttons">
+                    <a class="btn btn-primary" href="./cv/index.html">Scopri il mio CV</a>
+                    <a class="btn btn-secondary" href="./contacts/index.html">Contattami</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="showcase light-section">
+            <div class="container section-intro">
+                <p class="section-label">Profilo</p>
+                <h2>Un sito personale, senza rumore.</h2>
+                <p>
+                    Questo progetto raccoglie il mio profilo, le competenze che sto sviluppando
+                    e una prima struttura web costruita interamente in HTML e CSS.
+                </p>
+            </div>
+        </section>
+
+        <section class="cards-section dark-section">
+            <div class="container">
+                <div class="section-intro section-intro-dark">
+                    <p class="section-label">Competenze</p>
+                    <h2>Le basi, fatte bene.</h2>
+                </div>
+
+                <div class="cards-grid">
+                    <article class="info-card">
+                        <h3>HTML5</h3>
+                        <p>Struttura semantica chiara e contenuti organizzati in modo corretto.</p>
+                    </article>
+
+                    <article class="info-card">
+                        <h3>CSS3</h3>
+                        <p>Stile, gerarchia visiva, spaziature e costruzione di layout ordinati.</p>
+                    </article>
+
+                    <article class="info-card">
+                        <h3>Responsive Design</h3>
+                        <p>Layout adattabili a desktop, tablet e smartphone senza disastri laterali.</p>
+                    </article>
+
+                    <article class="info-card">
+                        <h3>Flexbox</h3>
+                        <p>Gestione semplice e solida di allineamenti, blocchi e componenti.</p>
+                    </article>
+
+                    <article class="info-card">
+                        <h3>CSS Grid</h3>
+                        <p>Organizzazione di sezioni e card con una struttura più precisa e moderna.</p>
+                    </article>
+
+                    <article class="info-card">
+                        <h3>GitHub</h3>
+                        <p>Pubblicazione del progetto online e gestione della struttura del lavoro.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-preview light-section">
+            <div class="container section-intro">
+                <p class="section-label">Pagine</p>
+                <h2>Un progetto semplice, completo, coerente.</h2>
+            </div>
+
+            <div class="container project-list">
+                <article class="project-block">
+                    <h3>Home</h3>
+                    <p>Presentazione personale, competenze e impostazione visiva del portfolio.</p>
+                </article>
+
+                <article class="project-block">
+                    <h3>Chi Sono</h3>
+                    <p>.....</p>
+                </article>
+
+                <article class="project-block">
+                    <h3>Progetti</h3>
+                    <p>....</p>
+                </article>
+
+                <article class="project-block">
+                    <h3>CV</h3>
+                    <p>Pagina dedicata al profilo, alla formazione e alle competenze tecniche.</p>
+                </article>
+
+                <article class="project-block">
+                    <h3>Contatti</h3>
+                    <p>Pagina con form e riferimenti per essere contattato in modo semplice.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>© 2026 Elpidio Alessandro</p>
+        </div>
+    </footer>
+
 </body>
+
 </html>

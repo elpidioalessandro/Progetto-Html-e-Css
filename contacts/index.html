@@ -1,11 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacts</title>
+    <title>Contatti | Elpidio Alessandro</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
+
 <body>
-    <h1>Let's contact me!</h1>
+    <header class="site-header">
+        <div class="container nav">
+            <a class="logo" href="../index.html">Elpidio Alessandro</a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../chisono/index.html">Chi Sono</a></li>
+                    <li><a href="../progetti/index.html">Progetti</a></li>
+                    <li><a href="../cv/index.html">Curriculum</a></li>
+                    <li><a href="../contacts/index.html">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="cv-hero">
+            <div class="container section-intro">
+                <h1>Parliamone, senza complicazioni.</h1>
+                <p>
+                    Per informazioni, collaborazioni o semplicemente per entrare in contatto,
+                    puoi usare il form qui sotto.
+                </p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container contact-grid">
+
+                <article class="form-card">
+                    <h2>Invia un messaggio</h2>
+
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" placeholder="Il tuo nome" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="La tua email" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="subject">Oggetto</label>
+                            <input type="text" id="subject" name="subject" placeholder="Oggetto del messaggio" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="message">Messaggio</label>
+                            <textarea id="message" name="message" placeholder="Scrivi qui il tuo messaggio" required></textarea>
+                        </div>
+
+                        <div class="form-submit">
+                            <button type="submit" class="btn btn-primary">Invia messaggio</button>
+                        </div>
+                    </form>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>© 2026 Elpidio Alessandro</p>
+        
+        </div>
+    </footer>
+
 </body>
+
 </html>
