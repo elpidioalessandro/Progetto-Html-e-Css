@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatti | Elpidio Alessandro</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" href="../assets/img/favicon.ico">
 </head>
-
 <body>
     <header class="site-header">
-        <div class="container nav">
-            <a class="logo" href="../index.html">Elpidio Alessandro</a>
-            <nav>
+        <div class="container header-inner">
+            <a href="../index.html" class="brand">Elpidio Alessandro</a>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-button">Menu</label>
+
+            <nav class="site-nav">
                 <ul class="menu">
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="../chisono/index.html">Chi Sono</a></li>
+                    <li><a href="../chisono/index.html">Chi sono</a></li>
                     <li><a href="../progetti/index.html">Progetti</a></li>
-                    <li><a href="../cv/index.html">Curriculum</a></li>
+                    <li><a href="../cv/index.html">CV</a></li>
                     <li><a href="../contacts/index.html">Contatti</a></li>
                 </ul>
             </nav>
@@ -28,45 +32,62 @@
             <div class="container section-intro">
                 <h1>Parliamone, senza complicazioni.</h1>
                 <p>
-                    Per informazioni, collaborazioni o semplicemente per entrare in contatto,
-                    puoi usare il form qui sotto.
+                    Per informazioni, collaborazioni o richieste, puoi utilizzare il form qui sotto.
                 </p>
             </div>
         </section>
 
         <section class="contact-section">
             <div class="container contact-grid">
-
                 <article class="form-card">
                     <h2>Invia un messaggio</h2>
+                    <p class="form-intro">
+                        Per richieste, collaborazioni o semplicemente per entrare in contatto,
+                        compila il modulo qui sotto.
+                    </p>
 
-                    <form class="contact-form">
+                    <form class="contact-form" action="#" method="post">
                         <div class="form-row">
-                            <label for="name">Nome</label>
-                            <input type="text" id="name" name="name" placeholder="Il tuo nome" required>
+                            <label for="name">Nome e cognome</label>
+                            <input type="text" id="name" name="name" placeholder="Il tuo nome" autocomplete="name"
+                                minlength="2" maxlength="40" required>
                         </div>
 
                         <div class="form-row">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="La tua email" required>
+                            <input type="email" id="email" name="email" placeholder="nome@email.com"
+                                autocomplete="email" required>
                         </div>
 
                         <div class="form-row">
                             <label for="subject">Oggetto</label>
-                            <input type="text" id="subject" name="subject" placeholder="Oggetto del messaggio" required>
+                            <input type="text" id="subject" name="subject" placeholder="Motivo del contatto"
+                                minlength="3" maxlength="80" required>
                         </div>
 
                         <div class="form-row">
                             <label for="message">Messaggio</label>
-                            <textarea id="message" name="message" placeholder="Scrivi qui il tuo messaggio" required></textarea>
+                            <textarea id="message" name="message" placeholder="Scrivi qui il tuo messaggio"
+                                minlength="20" maxlength="300" required></textarea>
                         </div>
 
+                        <div class="form-row checkbox-row">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">
+                                Confermo di aver compilato il form volontariamente e di acconsentire
+                                all’utilizzo dei dati inseriti per essere ricontattato.
+                            </label>
+                        </div>
+
+                        <p class="form-note">
+                            Tutti i campi sono obbligatori.
+                        </p>
+
                         <div class="form-submit">
-                            <button type="submit" class="btn btn-primary">Invia messaggio</button>
+                            <button type="submit" class="btn btn-secondary">Invia messaggio</button>
                         </div>
                     </form>
                 </article>
-
             </div>
         </section>
     </main>
@@ -74,10 +95,10 @@
     <footer class="site-footer">
         <div class="container footer-content">
             <p>© 2026 Elpidio Alessandro</p>
-        
-        </div>
+            <div class="footer-links">
+                <a href="https://github.com/elpidioalessandro" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/elpidio-alessandro-moretti" target="_blank" rel="noopener noreferrer">Linkedin</a>
+            </div>
     </footer>
-
 </body>
-
 </html>
